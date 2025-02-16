@@ -11,7 +11,7 @@ const booksWrapper = document.querySelector('.books');
 
 const books = getBooks();
 const booksHtml = books.map((book) => {
-   `<div class="book">
+ return  `<div class="book">
                 <figure class="book__img--wrapper">
                   <img class="book__img" src="${book.url}" alt="" />
                 </figure>
@@ -31,7 +31,7 @@ const booksHtml = books.map((book) => {
               </div>`;
 });
 
-booksWrapper.innerHTML = booksHtml;
+booksWrapper.innerHTML = booksHtml.join("");
 console.log(booksHtml)
 // booksWrapper.innerHTML = 
 }
