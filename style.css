@@ -370,7 +370,7 @@ HIGHLIGHTS
  
  */
 
-#flatest {
+#latest {
   padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0.1);
 }
@@ -465,6 +465,36 @@ footer {
 
 .footer__link {
   padding: 0 8px;
+}
+
+.books__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: #7342d6;
+}
+
+.books__loading--spinner {
+  display: none !important;
+}
+
+.books__loading .books__loading--spinner {
+  display: block !important;
+}
+
+.fa__spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* SMALL PHONES, TABLET, LARGE SMARTPHONES */
